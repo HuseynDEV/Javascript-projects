@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+:root {
+    --opacity: 0.15;
+    --inset-opacity: 0.1
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.toggle {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.time {
+    font-size: 60px;
+}
+
+.date {
+    font-size: 30px;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background: wheat; */
+    box-shadow: 0 0 15px 2px black;
+    border: 5px solid white;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 20px;
+
+}
+
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+
+.hand.hour {
+    background: black;
+    width: 5px;
+    height: 55px;
+    transform: translate(-50%, -100%) rotate(0deg);
+    /* border-radius: 0 0 60px 60px; */
+}
+
+
+.hand.minute {
+    background: black;
+    width: 3px;
+    height: 70px;
+    transform: translate(-50%, -100%) rotate(0deg);
+    /* border-radius: 0 0 60px 60px; */
+}
+
+
+
+
+
+.hand.second {
+    background: red;
+    width: 1px;
+    height: 80px;
+    transform: translate(-50%, -100%) rotate(0deg);
+    /* border-radius: 0 0 60px 60px; */
+}
+
+
+.center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: orangered;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}

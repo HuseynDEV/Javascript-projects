@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to top, #2663ac, #3ba6dc);
+}
+
+#header {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #22569f;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#points {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#user,
+#comp {
+    height: 40px;
+    width: 100px;
+    background: #d32F2F;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    margin: 0 10px;
+}
+
+#userPoints,
+#sign,
+#compPoints {
+    font-size: 100px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+#options {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: calc(50% - 100px)
+}
+
+.choices {
+    height: 200px;
+    width: 200px;
+    margin: 0 70px;
+}
+
+.choices i {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #22569f;
+    font-size: 80px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    border: 1px solid #ffffff7c;
+}
+
+.choices i:hover {
+    background: #fff;
+    color: #22569f;
+    border: 1px solid #22569f;
+}
+
+#result {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#result #userResult,
+#compResult {
+    height: 150px;
+    width: 100px;
+}
+
+#result #userResult i,
+#compResult i {
+    height: 100px;
+    width: 100px;
+    background: #D32F2F;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+#result #userResult h3,
+#compResult h3 {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#result #resultText {
+    height: 150px;
+    width: 200px;
+    font-size: 30px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
